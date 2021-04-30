@@ -286,6 +286,11 @@
 
 								<li class="nl-simple" aria-haspopup="true"><a href="#contact">Contact Us</a></li>
 
+								<li class="nl-simple" aria-haspopup="true"><a href="https://training.rancikelearning.com/login" target="_blank">LOGIN</a></li>
+
+
+								<!-- <button type="button" class="btn btn-outline btn-lg" id="login-button" href="rancike-document.pdf" name="button"><a href="https://training.rancikelearning.com/login" target="_blank"  download="Brochure">Login</a></button> -->
+
 
 
 							</ul>
@@ -318,7 +323,8 @@
 								directly enrolled in our 5 session course.
 								<br><br>Signin now to get the course worth ₹199 for FREE.
 							</p>
-							<button type="button" class="btn btn-primary btn-lg" id="download-button" href="rancike-document.pdf" name="button"><a href="rancike-document.pdf" target="_blank"  download="Brochure">Download Brochure</a></button>
+							<button type="button" class="btn btn-primary btn-lg" id="download-button" href="rancike-document.pdf" name="button"><a href="rancike-document.pdf" target="_blank"  download="Brochure" class="donwload-brochure">Download Brochure</a></button>
+								<button type="button" class="btn btn-outline btn-lg" id="login-button" href="rancike-document.pdf" name="button"><a href="https://training.rancikelearning.com/login" target="_blank"  download="Brochure">Login</a></button>
 							<!-- List -->
 							<!-- <ol class="num-list">
 															<li><p class="p-md">Laoreet augue an egestas feugiat primis undo etiam</p></li>
@@ -367,7 +373,7 @@
 
 								<!-- Form Input -->
 								<div class="col-md-12">
-									<input class="form-control name" type="text" name="name" 
+									<input class="form-control name" type="text" name="name"
 										 placeholder="Enter your name">
 								</div>
 
@@ -1032,7 +1038,7 @@
 		const form = document.forms['submit-to-google-sheet']
 
 		form.addEventListener('submit', e => {
-			
+
 			e.preventDefault()
 			fetch(scriptURL, {
 					method: 'POST',
@@ -1055,11 +1061,14 @@
         Username: "smtpswithjs@gmail.com",
         Password: "eglpqepvetyzpmzn",
         To: rec,
-        From: "smtpswithjs@gmail.com",
-        Subject: "your Rancike Course is here",
-        Body: "Hey learner, Do check out the course at link ~ https://www.youtube.com",
+        From: "rancikeweb@gmail.com",
+        Subject: "Your Rancike Course is here!",
+        Body: "Hey, do check out the course at link : https://training.rancikelearning.com/login." + "<br><br>"+
+				"Your UserId : user171" + "<br>" +
+				"Your Password : qwer351" + "<br><br>" +
+				"Best Wishes.",
     }).then(
-        alert("Enrolled Sucessfully")
+        alert("Enrolled Sucessfully !")
     );
 }
 	</script>

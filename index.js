@@ -7,7 +7,7 @@ $("#login-button").on("click", function(){
   if(username === "user171" && password === "qwer351"){
     // window.location.replace("http://stackoverflow.com");
     $(document).ready(function(){
-    var url = "https://chiragg2101.github.io/rancike/";
+    var url = "https://training.rancikelearning.com/rancike/detail";
     $(location).attr('href', url); // Using this
 });
   }

@@ -7,6 +7,18 @@ body {
 
 }
 
+#login-button{
+  margin-left: 2%;
+  border-width: 1px;
+  border-color: white;
+}
+#login-button:hover{
+  margin-left: 2%;
+  border-width: 1px;
+  border-color: white;
+  background-color: lightblue;
+}
+
 .ytvideo{
   width:560px;
   height:315px;
@@ -2191,4 +2203,13 @@ section {
 
 .message p{
       font-weight: 100!important;
+}
+
+#download-button:hover{
+  background-color: white;
+    color: black !important;
+
+}
+.donwload-brochure:hover{
+  color: black;
 }
